@@ -1,26 +1,28 @@
-import random
+# we import some modules to use
+import random  
 import string
 
-
+# we define lists of numbers, lowercase letters 
+# and capital letters, special characters
 number_list = range(1, 27)
-letter_list = [x for x in string.ascii_lowercase]
+number_list2 = range(1, 5)
+letter_list = [x for x in string.ascii_lowercase] 
 caps_list = [x for x in string.ascii_uppercase]
+symbol_list = ['#', '!', '@', '%']
 
+# we define dictionaries which associate numbers 
+# 1-26 to letters and numbers 1-4 to special characters
 num_to_alph = dict(zip(number_list, letter_list)) # dictionary of numbered lowercase letters
 num_to_caps = dict(zip(number_list, caps_list)) # dictionary of numbered uppercase letters
-
-symbol_list = ['#', '!', '@', '%']
-number_list2 = range(1, 5)
-
 num_to_symbols = dict(zip(number_list2, symbol_list)) # dictionary of numbers to symbols 
 
-
-def prompt_conditions():
+# asks the user to input has_uppercase, has_lowercase,
+# password_length which are the 'conditions'
+def prompt_conditions(): 
 	global b
 	global a
 	a = 0
 	b = 0
-
 
 	print """has_uppercase = 
 	1. True
@@ -62,7 +64,7 @@ def prompt_conditions():
 		a = 0
 
 	else:
-		print "Go back and sort this out."
+		pass
 
 
 	if has_symbols == True:
@@ -72,10 +74,13 @@ def prompt_conditions():
 		b = 0
 		
 	else:
-		print "Sort out has_symbols."
+		pass
 
 
-
+# This function will use our lists, dictionaries and parameters
+# a and b to define a password which may or may not contain
+# special characters or capital letters depending on the 
+# conditions
 def random_list(password_length):
 	list_of_letters = []
 
