@@ -21,8 +21,6 @@ num_to_symbols = dict(zip(number_list2, symbol_list)) # dictionary of numbers to
 def prompt_conditions(): 
 	global b
 	global a
-	a = 0
-	b = 0
 
 	print """has_uppercase = 
 	1. True
