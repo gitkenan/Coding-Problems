@@ -7,7 +7,7 @@ option you would like to run.
 To run, first we cd to the directory where the file is kept and we run it like so:
 
 ```
-PS C:\Users\kenan\mystuff\codingproblems\coding-problems> python pasword_gen.py
+python pasword_gen.py
 
 ```
 
@@ -48,3 +48,19 @@ CbgifbZHou
 ```
 
 which we can copy straight from the terminal. Enjoy!
+
+# Security notice
+Please remember this is repo is for the purpose of education only and
+is not for the purpose of maintaining security. The passwords that you are making 
+here are displayed on the screen in your terminal, so if you do not reset your terminal
+window, the password you have generated is vulnerable to onlookers. 
+
+Future improvements to this programme to improve security may be considered.
+
+# Future ideas and notes
+A goal for the future of this project is related to the above comments, which 
+is to improve the security by saving the output of the password in a secure
+form which is then accessed by the user and only the user.
+
+This could involve entering the password for the laptop to access the file, or
+by exporting it directly to a known password tool. 
