@@ -1,5 +1,5 @@
 ## Random Password
-Password generator for those of you who want to locally keep a piece of software 
+Password generator for those of you who want a programme 
 which can generate a password for you. To run, simply execute the programme as 
 per usual and type '1' or '2' followed by ENTER to tell the programme which 
 option you would like to run. 
